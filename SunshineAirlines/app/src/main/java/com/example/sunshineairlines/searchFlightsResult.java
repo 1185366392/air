@@ -6,13 +6,13 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class searchflights extends AppCompatActivity implements View.OnClickListener {
+public class searchFlightsResult extends AppCompatActivity implements View.OnClickListener {
 
     private Button back1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_searchflights);
+        setContentView(R.layout.activity_searchflightsresult);
         back1=(Button)findViewById(R.id.back1);
         back1.setOnClickListener(this);
     }

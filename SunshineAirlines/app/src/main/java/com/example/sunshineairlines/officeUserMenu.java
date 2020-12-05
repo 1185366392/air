@@ -6,21 +6,22 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class officeUserMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private Button login;
+    private Button search;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        login =(Button) findViewById(R.id.login);
+        setContentView(R.layout.activity_officeusermenu);
 
-        login.setOnClickListener(this);
+        search =(Button)findViewById(R.id.search);
+        search.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View view) {
-        Intent intent=new Intent(this,officeuser.class);
+        Intent intent=new Intent(this, searchFlightsResult.class);
         startActivity(intent);
     }
 }

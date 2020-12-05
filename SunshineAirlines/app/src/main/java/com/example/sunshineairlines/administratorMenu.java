@@ -3,11 +3,11 @@ package com.example.sunshineairlines;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Administrator extends AppCompatActivity {
+public class administratorMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_administrator);
+        setContentView(R.layout.activity_administratormenu);
     }
 }
