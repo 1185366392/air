@@ -64,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textColor="#333"
+                android:id="@+id/email"
         />
     </LinearLayout>
 
@@ -85,6 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textColor="#333"
+                android:id="@+id/password"
         />
     </LinearLayout>
 

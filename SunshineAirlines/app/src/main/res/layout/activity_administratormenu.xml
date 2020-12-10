@@ -44,17 +44,17 @@
         <Button
                 android:text="Flight Schedule Management"
                 android:layout_width="match_parent"
-                android:layout_height="50dp" android:id="@+id/button3" android:layout_marginTop="30dp"
+                android:layout_height="50dp" android:id="@+id/fsManage" android:layout_marginTop="30dp"
                 android:background="@drawable/buttonblue"/>
         <Button
                 android:text="User Management"
                 android:layout_width="match_parent"
-                android:layout_height="50dp" android:id="@+id/button4" android:layout_marginTop="40dp"
+                android:layout_height="50dp" android:id="@+id/userManage" android:layout_marginTop="40dp"
                 android:background="@drawable/buttonblue"/>
         <Button
                 android:text="Logout"
                 android:layout_width="match_parent"
-                android:layout_height="50dp" android:id="@+id/button5" android:layout_marginTop="40dp"
+                android:layout_height="50dp" android:id="@+id/Logoutbtn" android:layout_marginTop="40dp"
                 android:background="@drawable/buttonred"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
