@@ -61,14 +61,14 @@
                 android:layout_height="45dp" android:gravity="center">
             <Spinner
                     android:layout_width="50dp"
-                    android:layout_height="35dp" android:id="@+id/spinner6" android:layout_weight="1"/>
+                    android:layout_height="35dp" android:id="@+id/fmCity" android:layout_weight="1"/>
             <ImageView
                     android:layout_width="8dp"
                     android:layout_height="45dp" app:srcCompat="@drawable/exchange" android:id="@+id/imageView3"
                     android:layout_weight="1"/>
             <Spinner
                     android:layout_width="50dp"
-                    android:layout_height="35dp" android:id="@+id/spinner7" android:layout_weight="1"/>
+                    android:layout_height="35dp" android:id="@+id/toCity" android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="vertical"
@@ -90,11 +90,13 @@
                     android:background="@drawable/textbox"
             >
                     <EditText android:layout_width="250dp" android:layout_height="match_parent"
+                              android:id="@+id/edDa"
                         android:background="#00FFFFFF"
                     />
-                    <ImageView android:layout_width="44dp" android:layout_height="match_parent"
-                        android:src="@drawable/calendar"
-                    />
+                <ImageButton android:layout_width="42dp" android:layout_height="42dp"
+                             android:id="@+id/imDa"
+                             android:background="@drawable/calendar"
+                />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -110,19 +112,21 @@
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="57dp"
+                android:layout_height="51dp"
                 android:gravity="center"
         >
             <LinearLayout
                     android:orientation="horizontal"
-                    android:layout_width="299dp" android:layout_height="40dp"
+                    android:layout_width="299dp" android:layout_height="match_parent"
                     android:background="@drawable/textbox"
             >
                 <EditText android:layout_width="250dp" android:layout_height="match_parent"
+                          android:id="@+id/edTo"
                           android:background="#00FFFFFF"
                 />
-                <ImageView android:layout_width="44dp" android:layout_height="match_parent"
-                           android:src="@drawable/calendar"
+                <ImageButton android:layout_width="42dp" android:layout_height="match_parent"
+                             android:id="@+id/imTo"
+                           android:background="@drawable/calendar"
                 />
             </LinearLayout>
         </LinearLayout>
@@ -134,8 +138,8 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="55dp" android:layout_marginStart="55dp" android:layout_marginEnd="55dp"
             android:layout_marginRight="55dp" app:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/buttonblue" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" android:layout_marginTop="56dp"/>
+            android:background="@drawable/buttonblue" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" android:layout_marginTop="24dp"/>
     <Button
             android:text="Back"
             android:layout_width="300dp"
@@ -145,5 +149,5 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="55dp"
             android:layout_marginEnd="55dp" android:background="@drawable/buttonyellow"
             app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toBottomOf="@+id/buttonsearch"
-            android:layout_marginTop="56dp"/>
+            android:layout_marginTop="36dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

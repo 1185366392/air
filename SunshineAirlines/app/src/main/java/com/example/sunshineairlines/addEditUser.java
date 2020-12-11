@@ -57,7 +57,7 @@ public class addEditUser extends AppCompatActivity implements View.OnClickListen
             String photo="";//照片暂时为空
             String dateOfbirth="";//生日暂为空
 
-            String url="http://192.168.11.1:8080/SunshineAirlines/addUser?roleId="+roleId+
+            String url="http://10.0.2.2:8080/SunshineAirlines/addUser?roleId="+roleId+
                     "&email="+emailtext+"&firstName="+fnametext+"&lastName="+lnametext+"&gender="+gender+"&dateOfBirth="+dateOfbirth+"&phone="+phonetext+"&photo="+photo+"&address="+addresstext;
             Http.post(url,handler,666);
         }else{

@@ -31,7 +31,7 @@ public class loginScreen extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-        String url="http://192.168.11.1:8080/SunshineAirlines/login?email="+email.getText().toString()+"&password="+password.getText().toString();
+        String url="http://10.0.2.2:8080/SunshineAirlines/login?email="+email.getText().toString()+"&password="+password.getText().toString();
 
         Http.post(url,handler,123);
     }
